@@ -1,0 +1,686 @@
+/* font-family: "Arimo", sans-serif;
+   font-family: "Noto Sans Arabic", sans-serif; 
+*/
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     background-color: #3a2f2d;
+     color: white;
+     font-family: "Arimo", sans-serif;
+}
+
+.container {
+   padding: 2em 3em 0 3em;
+   position: relative;
+}
+
+/* home page start */
+
+.home-page {
+   text-transform: capitalize;
+   height: 95dvh;
+}
+
+nav a {
+   text-decoration: none;
+   color: white;
+   margin-right: 1.6em;
+   transition: 0.4s ease;
+   border: 0 transparent solid;
+}
+
+nav a:hover {
+   border-bottom: 1px solid;
+}
+
+.title {
+   margin-top: 1em;
+   margin-left: 1em;
+}
+
+.title h1 {
+   font-size: 12.5em;
+   font-weight: 400;
+   letter-spacing: -12px;
+}
+
+.t1{
+   margin: 0;
+}
+
+.t2 {
+   margin: 0;
+   margin-left: 1.3em;
+   margin-top: -0.35em;
+}
+
+.fa-solid, .fas {
+   font-weight: 900;
+   font-size: 3em;
+}
+
+.order-now {
+   width: 5em;
+   height: 5em;
+   text-align: center;
+   border: 1px solid;
+   border-radius: 50%;
+   padding: 0.4em;
+   font-weight: 300;
+   font-size: 1.2em;
+   margin-left: 1.2em;
+   direction: rtl;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.content {
+   display: flex;
+   justify-content: space-between;
+}
+
+.title-Ar h1 {
+   font-size: 6em;
+   font-family: "Noto Sans Arabic", sans-serif;
+   margin-bottom: 0;
+}
+
+.content {
+   display: flex;
+   justify-content: space-between;
+}
+
+.t-shirt-img {
+   margin-left: 7em;
+   margin-top: -2em;
+}
+
+.t-shirt-img img {
+   width: 26em;
+}
+
+.title-Ar h1 {
+   font-size: 6em;
+   font-family: "Noto Sans Arabic", sans-serif;
+   margin-bottom: 0;
+   margin-top: -0.4em;
+   margin-right: 0.6em;
+   margin-left: 0.3em;
+   white-space: nowrap;
+}
+
+/* home page end */
+
+/* --------------------------- */
+
+/* explor page start */
+
+.explore {
+   height: 200dvh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   overflow: hidden;
+}
+
+.explore::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-image: url(/images/explore-img.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   z-index: -1;
+   top: 100dvh;
+   height: 100dvh;
+}
+
+.explore::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   z-index: -1;
+   margin-top: 100dvh;
+   height: 100dvh;
+   background: linear-gradient(to bottom, transparent 50%, #3a2f2d);
+}
+
+header {
+   background: #d9cbc2;
+   width: 16em;
+   height: 7em;
+   text-align: center;
+   padding: 2em 0 0 0;
+   border-radius: 3em;
+   margin-top: -4em;
+}
+
+header h2 {
+   font-size: 3em;
+   text-transform: capitalize;
+   color: #85675d;
+}
+
+.section-card {
+   text-align: center;
+   border-radius: 16px;
+   background: #85675d;
+   padding-bottom: 0.5em;
+   width: fit-content;
+   cursor: pointer;
+   box-shadow: 0 0 15px black;
+   transition: 0.4s ease;
+}
+
+.section-card:hover {
+   transform: scale(1.1);
+}
+
+.section-card img {
+   border-radius: 16px;
+   height: 230px;
+}
+
+.section-card h3 {
+   margin: 0;
+   margin-top: 0.2em;
+   font-size: 1.5em;
+   font-family: "Noto Sans Arabic", sans-serif;
+   color: #d9cbc2;
+}
+
+.main-content {
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-items: center;
+   row-gap: 24dvh;
+   margin-top: 8em;
+}
+
+/* explore page end */
+
+/* -------------------------- */
+
+/* about us page start */
+
+.about-us {
+   padding-bottom: 5em;
+}
+
+.about-content {
+   direction: rtl;
+}
+
+.about-content h1 {
+   text-transform: uppercase;
+   letter-spacing: -6px;
+   font-size: 4em;
+   font-weight: 400;
+   margin: 0;
+}
+
+.about-content h3 {
+   font-size: 1.6em;
+   font-family: "Noto Sans Arabic", sans-serif;
+}
+
+.about-content p {
+   font-family: "Noto Sans Arabic", sans-serif;
+   width: 43em;
+}
+
+footer {
+   background: #d9cbc2;
+   color: #85675d;
+   display: flex;
+   direction: rtl;
+   justify-content: space-between;
+   padding: 1em 5em;
+   align-items: center;
+}
+
+footer a {
+   font-size: 1.8em;
+   font-weight: 700;
+   font-family: "Noto Sans Arabic", sans-serif;
+   margin: 0.4em 0;
+   color: inherit;
+}
+
+footer h4 a {
+   text-decoration: underline;
+   cursor: pointer;
+   font-size: 1em;
+}
+
+.fa-brands, .fab {
+   font-weight: 500;
+   margin-left: 0.2em;
+   font-size: 1.2em;
+   transform: translateY(5px);
+}
+
+.nav-anime {
+   background: #d9cbc2;
+   padding: 2em;
+   height: 18em;
+   width: 14em;
+   border-radius: 1em;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   position: absolute;
+   z-index: 5;
+   top: 18dvh;
+   left: 4dvh;
+   align-items: center;
+   animation: navAnime-pos 0.8s ease-out 0ms 1;
+}
+
+@keyframes navAnime-pos {
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+
+@media (max-width: 450px) {
+   .container {
+      padding: 5dvh 2em 0 2em;
+      position: relative;
+   }
+
+   .home-page {
+      text-transform: capitalize;
+      height: 95dvh;
+      position: relative;
+  }
+
+  .content {
+   display: flex;
+   justify-content: center;
+   flex-direction: column-reverse;
+   }
+
+   .title {
+      margin-top: -2em;
+      margin-left: 0;
+   }
+
+   .title h1 {
+      font-size: 5.8em;
+      font-weight: 400;
+      letter-spacing: -6px;
+   }
+
+   .t2 {
+      margin-top: 0.2em;
+   }
+
+   nav a {
+      background: #85675d;
+      color: #d9cbc2;
+      padding: 1em;
+      border-radius: 1em;
+      text-align: center;
+      width: 30dvw;
+      font-size: 1.4em;
+      font-weight: 600;
+      margin: 0;
+   }
+
+   .order-now {
+      font-size: 1.4em;
+      position: absolute;
+      bottom: 0;
+      right: 25vw;
+      margin-bottom: 2em;
+   }
+
+   .t-shirt-img {
+      margin-left: 7em;
+      margin-top: -1em;
+   }
+
+   .t-shirt-img img {
+      width: 16em;
+   }
+
+   .title-Ar h1 {
+      font-size: 3em;
+      margin: 0;
+      position: absolute;
+      top: 9.6em;
+      right: 0.4em;
+   }
+
+   .explore {
+      margin-bottom: 16em;
+      height: fit-content;
+      padding-bottom: 2em;
+   }
+
+   .explore::before {
+      background-image: url(/images/explore-phone.jpg);
+   }
+
+   header {
+      width: 13em;
+      height: 4.6em;
+      padding: 2.3em 0 0.4em 0;
+      border-radius: 2em;
+  }
+
+   header h2 {
+      font-size: 2.2em;
+   }
+
+   .main-content {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      gap: 4dvh;
+      margin-top: 2em;
+   }
+
+   .section-card {
+      border-radius: 10px;
+      padding-bottom: 0.5em;
+   }
+
+   .section-card img {
+      border-radius: 10px;
+      height: 150px;
+   }
+
+   .section-card h3 {
+      margin: 0;
+      margin-top: 0.2em;
+      font-size: 1.4em;
+   }
+
+   footer {
+      padding: 1em 2em;
+      align-items: normal;
+      flex-direction: column;
+   }
+
+   footer a {
+      font-size: 1.4em;
+      margin: 0.4em 0;
+   }
+
+   .fa-brands, .fab {
+      font-size: 1.6em;
+      transform: translateY(10px);
+   }
+
+   footer h4 {
+      align-self: center;
+      margin: 0;
+   }
+
+   .about-content h1 {
+      letter-spacing: -5px;
+      font-size: 3.6em;
+   }
+
+   .about-content h3 {
+      font-size: 1.4em;
+      margin-top: 4em;
+   }
+
+  .about-content p {
+   width: fit-content;
+   font-size: 0.9em;
+   margin-top: 3em;
+   }
+
+}
+
+@media (max-width: 400px) {
+   body {
+      font-size: 14px;
+   }
+
+   .t-shirt-img img {
+      width: 18em;
+   }
+
+   .t-shirt-img {
+      margin-left: 4em;
+   }
+
+   .title {
+      margin-top: -1em;
+   }
+
+   .title h1 {
+      font-size: 5.8em;
+   }
+
+   .t2 {
+      margin-top: 0.2em;
+   }
+
+   .title-Ar h1 {
+      top: 10.6em;
+      right: 0.4em;
+   }
+
+   .section-card img {
+      height: 125px;
+   }
+
+   .explore::before {
+      background-image: url(/images/explore-phone.jpg);
+   }
+
+   nav a {
+      background: #85675d;
+      color: #d9cbc2;
+      padding: 1em;
+      border-radius: 1em;
+      text-align: center;
+      width: 30dvw;
+      font-size: 1.4em;
+      font-weight: 600;
+      margin: 0;
+   }
+
+}
+
+@media (max-height: 815px) and (pointer: coarse) {
+   .t-shirt-img img {
+      width: 16em;
+   }
+
+   .t-shirt-img {
+      margin-left: 7em;
+   }
+
+   .title {
+      margin-top: -1em;
+   }
+
+   .t2 {
+      margin-top: -0.1em;
+   }
+
+   .title-Ar h1 {
+      top: 9.4em;
+      right: 0.4em;
+   }
+
+   .order-now {
+      margin-top: 6em;
+   }
+
+   .explore::before {
+      background-image: url(/images/explore-phone.jpg);
+   }
+
+}
+
+@media (min-width: 401px) and (max-width: 450px) and (min-height: 620px) and (max-height: 750px) {
+
+   .container {
+      padding: 5dvh 2em 0 2em;
+      position: relative;
+   }
+
+   .home-page {
+      text-transform: capitalize;
+      height: 95dvh;
+      position: relative;
+  }
+
+  .content {
+   display: flex;
+   justify-content: center;
+   flex-direction: column-reverse;
+   }
+
+   .title {
+      margin-top: -3em;
+      margin-left: 0;
+   }
+
+   .title h1 {
+      font-size: 5.6em;
+      font-weight: 400;
+      letter-spacing: -6px;
+   }
+
+   .t2 {
+      margin-top: -0.2em;
+   }
+
+   nav a {
+      background: #85675d;
+      color: #d9cbc2;
+      padding: 1em;
+      border-radius: 1em;
+      text-align: center;
+      width: 30dvw;
+      font-size: 1.4em;
+      font-weight: 600;
+      margin: 0;
+   }
+
+   .order-now {
+      font-size: 1.4em;
+      position: absolute;
+      bottom: 0;
+      right: 25vw;
+      margin-bottom: 2em;
+   }
+
+   .t-shirt-img {
+      margin-left: 8em;
+      margin-top: -1em;
+   }
+
+   .t-shirt-img img {
+      width: 14em;
+   }
+
+   .title-Ar h1 {
+      font-size: 3em;
+      margin: 0;
+      position: absolute;
+      top: 7.2em;
+      right: 0.4em;
+   }
+
+   .explore {
+      margin-bottom: 16em;
+      height: fit-content;
+   }
+
+   .explore::before {
+      background-image: url(/images/explore-phone.jpg);
+   }
+
+   header {
+      width: 13em;
+      height: 4.6em;
+      padding: 2.3em 0 0.4em 0;
+      border-radius: 2em;
+  }
+
+   header h2 {
+      font-size: 2.2em;
+   }
+
+   .main-content {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      gap: 4dvh;
+      margin-top: 2em;
+   }
+
+   .section-card {
+      border-radius: 10px;
+      padding-bottom: 0.5em;
+   }
+
+   .section-card img {
+      border-radius: 10px;
+      height: 150px;
+   }
+
+   .section-card h3 {
+      margin: 0;
+      margin-top: 0.2em;
+      font-size: 1.4em;
+   }
+
+   footer {
+      padding: 1em 2em;
+      align-items: normal;
+      flex-direction: column;
+   }
+
+   footer a {
+      font-size: 1.4em;
+      margin: 0.4em 0;
+   }
+
+   .fa-brands, .fab {
+      font-size: 1.6em;
+      transform: translateY(10px);
+   }
+
+   footer h4 {
+      align-self: center;
+      margin: 0;
+   }
+
+   .about-content h1 {
+      letter-spacing: -5px;
+      font-size: 3.6em;
+   }
+
+   .about-content h3 {
+      font-size: 1.4em;
+      margin-top: 4em;
+   }
+
+  .about-content p {
+   width: fit-content;
+   font-size: 0.9em;
+   margin-top: 3em;
+   }
+
+}
