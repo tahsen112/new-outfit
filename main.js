@@ -5,7 +5,6 @@
 let nav = document.querySelector(`nav`);
 
 if (screen.width <= 450) {
-     console.log(nav.innerHTML);
      nav.innerHTML = `<i class="fa-solid fa-bars" onclick="getNav()" ></i>`;
 }
 
@@ -22,7 +21,7 @@ function getNav() {
      `;
      nav.classList.toggle(`nav-anime`);
 }
-console.log(screen.height);
+
 function getBack() {
      nav.innerHTML = `<i class="fa-solid fa-bars" onclick="getNav()" ></i>`;
      nav.classList.toggle(`nav-anime`);
