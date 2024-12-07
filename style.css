@@ -135,7 +135,7 @@ nav a:hover {
    content: "";
    position: absolute;
    inset: 0;
-   background-image: url(/images/explore-img.jpg);
+   background-image: url(./images/explore-img.jpg);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -373,7 +373,7 @@ footer h4 a {
    }
 
    .explore::before {
-      background-image: url(/images/explore-phone.jpg);
+      background-image: url(./images/explore-phone.jpg);
    }
 
    header {
@@ -484,7 +484,7 @@ footer h4 a {
    }
 
    .explore::before {
-      background-image: url(/images/explore-phone.jpg);
+      background-image: url(./images/explore-phone.jpg);
    }
 
    nav a {
@@ -528,7 +528,7 @@ footer h4 a {
    }
 
    .explore::before {
-      background-image: url(/images/explore-phone.jpg);
+      background-image: url(./images/explore-phone.jpg);
    }
 
 }
@@ -610,7 +610,7 @@ footer h4 a {
    }
 
    .explore::before {
-      background-image: url(/images/explore-phone.jpg);
+      background-image: url(./images/explore-phone.jpg);
    }
 
    header {
