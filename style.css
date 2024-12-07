@@ -242,7 +242,7 @@ header h2 {
 footer {
    background: #d9cbc2;
    color: #85675d;
-   display: flex;
+   display: none;
    direction: rtl;
    justify-content: space-between;
    padding: 1em 5em;

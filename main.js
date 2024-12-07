@@ -11,6 +11,7 @@ if (screen.width <= 450) {
 
 window.addEventListener(`load`, () => {
      document.querySelector(`.container`).style.display = `block`;
+     document.querySelector(`footer`).style.display = `flex`;
 });
 
 function getNav() {
